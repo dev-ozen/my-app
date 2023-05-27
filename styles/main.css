@@ -1,7 +1,7 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-/*top bar*/
+/*top bar start*/
 .top-outer {
     width: 100%;
     height: 40px;
@@ -53,4 +53,32 @@
     cursor: pointer;
 
 }
-/*top bar*/
+/*top bar end*/
+
+/*nav bar start*/
+.nav-outer{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(127, 140, 141,0.5);
+}
+/*nav bar end*/
+/*main slider start*/
+.slider{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    left: 0;
+}
+.slide.active{
+    opacity: 1;
+}
+/*main slider end*/
