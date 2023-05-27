@@ -24,10 +24,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 .top-left > ul > li{
     color: white;
     font-size: 15px;
     border: 1px solid red;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 /*top bar*/
