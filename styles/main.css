@@ -103,22 +103,24 @@
 .solution-main-outer {
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    background-image: url("https://preview.colorlib.com/theme/eroo/images/use_your_illusion.png.webp");
 }
 
 .inner-wrap {
     width: 100%;
     height: 280px;
-    border: 1px solid red;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .inner {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     height: 100%;
+    position: relative;
+    transition: all 1s;
+    background-color: rgba(52, 73, 94,1.0);
+    color: orange;
 }
 
 .inner-wrap-element {
@@ -140,5 +142,30 @@
 .inner-wrap-element > i {
     font-size: 50px;
 }
-
+.movable-element{
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(211, 84, 0, 1.0);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+    background-color: rgba(52, 73, 94,1.0);
+    right: 100px;
+    transition: all 1s;
+ /*   display: none;*/
+}
+.inner:hover .movable-element{
+    transform: translateX(50px);
+    display: flex;
+}
 /*solutions end*/
+
+
+@media (max-width: 1000px) {
+    .top-outer{
+        display: none;
+    }
+}
