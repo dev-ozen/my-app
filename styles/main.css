@@ -1,20 +1,24 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
+
 /*top bar start*/
 .top-outer {
     width: 100%;
     height: 40px;
-    background-color: rgba(52, 73, 94,0.2);
+    background-color: rgba(52, 73, 94, 0.2);
 }
-.top-inner{
+
+.top-inner {
     display: flex;
     height: 100%;
 }
-.top-element{
+
+.top-element {
     flex: 1;
 }
-.top-left > ul{
+
+.top-left > ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -22,7 +26,8 @@
     align-items: center;
     height: 100%;
 }
-.top-left > ul > li{
+
+.top-left > ul > li {
     color: white;
     font-size: 15px;
     height: 100%;
@@ -30,40 +35,47 @@
     margin-right: 15px;
     align-items: center;
 }
-.top-left > ul > li span:hover{
+
+.top-left > ul > li span:hover {
     cursor: pointer;
 }
-.top-right ul{
+
+.top-right ul {
     list-style: none;
     display: flex;
     height: 100%;
     justify-content: flex-end;
 }
-.top-right ul li{
+
+.top-right ul li {
     color: white;
     margin-right: 15px;
     display: flex;
     align-items: center;
 }
-.top-right > ul > li:last-child{
+
+.top-right > ul > li:last-child {
     margin-right: 0;
 }
-.top-right ul li:hover{
+
+.top-right ul li:hover {
     color: #c0392b;
     cursor: pointer;
 
 }
+
 /*top bar end*/
 
 /*nav bar start*/
-.nav-outer{
+.nav-outer {
     width: 100%;
     height: 70px;
-    background-color: rgba(127, 140, 141,0.5);
+    background-color: rgba(127, 140, 141, 0.5);
 }
+
 /*nav bar end*/
 /*main slider start*/
-.slider{
+.slider {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -71,7 +83,8 @@
     top: -110px;
     z-index: -1;
 }
-.slide{
+
+.slide {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -79,7 +92,53 @@
     display: none;
     left: 0;
 }
-.slide.active{
+
+.slide.active {
     opacity: 1;
 }
+
 /*main slider end*/
+
+/*solutions start*/
+.solution-main-outer {
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+}
+
+.inner-wrap {
+    width: 100%;
+    height: 280px;
+    border: 1px solid red;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 100%;
+}
+
+.inner-wrap-element {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+}
+
+.inner:hover {
+    background-color: rgba(211, 84, 0, 1.0);
+    cursor: pointer;
+    color: white;
+}
+
+.inner > .inner-wrap-element:first-child {
+    justify-content: flex-end;
+}
+
+.inner-wrap-element > i {
+    font-size: 50px;
+}
+
+/*solutions end*/
