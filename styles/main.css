@@ -5,16 +5,13 @@
 .top-outer {
     width: 100%;
     height: 40px;
-    border: 1px solid red;
     background-color: rgba(52, 73, 94,0.2);
 }
 .top-inner{
-    border: 1px solid red;
     display: flex;
     height: 100%;
 }
 .top-element{
-    border: inherit;
     flex: 1;
 }
 .top-left > ul{
@@ -22,16 +19,38 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 .top-left > ul > li{
     color: white;
     font-size: 15px;
-    border: 1px solid red;
     height: 100%;
     display: flex;
+    margin-right: 15px;
     align-items: center;
+}
+.top-left > ul > li span:hover{
+    cursor: pointer;
+}
+.top-right ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+}
+.top-right ul li{
+    color: white;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+.top-right > ul > li:last-child{
+    margin-right: 0;
+}
+.top-right ul li:hover{
+    color: #c0392b;
+    cursor: pointer;
+
 }
 /*top bar*/
