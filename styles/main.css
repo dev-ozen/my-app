@@ -1,0 +1,33 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/*top bar*/
+.top-outer {
+    width: 100%;
+    height: 40px;
+    border: 1px solid red;
+    background-color: rgba(52, 73, 94,0.2);
+}
+.top-inner{
+    border: 1px solid red;
+    display: flex;
+    height: 100%;
+}
+.top-element{
+    border: inherit;
+    flex: 1;
+}
+.top-left > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-left > ul > li{
+    color: white;
+    font-size: 15px;
+    border: 1px solid red;
+}
+/*top bar*/
